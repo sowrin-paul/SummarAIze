@@ -1,0 +1,19 @@
+# Node
+node_modules/
+# Python
+*.py[cod]
+__pycache__/
+.env
+.venv/
+env/
+# VSCode & PyCharm
+.vscode/
+.idea/
+# OS
+.DS_Store
+# Docker
+**/__pycache__
+**/.pytest_cache
+# Logs & compiled
+*.log
+*.sqlite3

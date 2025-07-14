@@ -1,0 +1,161 @@
+├── frontend/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── index.html
+│   ├── Dockerfile
+│   ├── .env.example
+│   ├── .env.local
+│   ├── 
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   └── manifest.json
+│   │
+│   └── src/
+│       ├── main.tsx
+│       ├── App.tsx
+│       ├── index.css
+│       ├── vite-env.d.ts
+│       ├── 
+│       ├── components/
+│       │   ├── ui/
+│       │   │   ├── Button.tsx
+│       │   │   ├── Input.tsx
+│       │   │   ├── Modal.tsx
+│       │   │   ├── Card.tsx
+│       │   │   ├── Badge.tsx
+│       │   │   ├── Spinner.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── layout/
+│       │   │   ├── Layout.tsx
+│       │   │   ├── Header.tsx
+│       │   │   ├── Sidebar.tsx
+│       │   │   ├── Footer.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── auth/
+│       │   │   ├── LoginForm.tsx
+│       │   │   ├── RegisterForm.tsx
+│       │   │   ├── ProtectedRoute.tsx
+│       │   │   ├── AuthGuard.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── papers/
+│       │   │   ├── PaperList.tsx
+│       │   │   ├── PaperCard.tsx
+│       │   │   ├── PaperUpload.tsx
+│       │   │   ├── PaperViewer.tsx
+│       │   │   ├── PaperSummary.tsx
+│       │   │   ├── PaperMetadata.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── search/
+│       │   │   ├── SearchBar.tsx
+│       │   │   ├── SearchResults.tsx
+│       │   │   ├── SearchFilters.tsx
+│       │   │   ├── SavedSearches.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── annotations/
+│       │   │   ├── AnnotationList.tsx
+│       │   │   ├── AnnotationForm.tsx
+│       │   │   ├── HighlightTool.tsx
+│       │   │   ├── NoteEditor.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── chat/
+│       │   │   ├── ChatInterface.tsx
+│       │   │   ├── ChatMessage.tsx
+│       │   │   ├── ChatInput.tsx
+│       │   │   ├── ChatHistory.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   └── collaboration/
+│       │       ├── FolderList.tsx
+│       │       ├── FolderCard.tsx
+│       │       ├── ShareModal.tsx
+│       │       ├── CommentThread.tsx
+│       │       └── index.ts
+│       │
+│       ├── pages/
+│       │   ├── HomePage.tsx
+│       │   ├── DashboardPage.tsx
+│       │   ├── ProfilePage.tsx
+│       │   ├── 
+│       │   ├── auth/
+│       │   │   ├── LoginPage.tsx
+│       │   │   ├── RegisterPage.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── papers/
+│       │   │   ├── PapersPage.tsx
+│       │   │   ├── PaperDetailPage.tsx
+│       │   │   ├── UploadPage.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   ├── search/
+│       │   │   ├── SearchPage.tsx
+│       │   │   └── index.ts
+│       │   │
+│       │   └── collaboration/
+│       │       ├── FoldersPage.tsx
+│       │       ├── FolderDetailPage.tsx
+│       │       └── index.ts
+│       │
+│       ├── store/
+│       │   ├── index.ts
+│       │   ├── 
+│       │   ├── slices/
+│       │   │   ├── authSlice.ts
+│       │   │   ├── uiSlice.ts
+│       │   │   ├── papersSlice.ts
+│       │   │   └── index.ts
+│       │   │
+│       │   └── api/
+│       │       ├── baseApi.ts
+│       │       ├── authApi.ts
+│       │       ├── papersApi.ts
+│       │       ├── searchApi.ts
+│       │       ├── annotationsApi.ts
+│       │       ├── chatApi.ts
+│       │       ├── collaborationApi.ts
+│       │       └── index.ts
+│       │
+│       ├── hooks/
+│       │   ├── useAuth.ts
+│       │   ├── useLocalStorage.ts
+│       │   ├── useDebounce.ts
+│       │   ├── usePagination.ts
+│       │   └── index.ts
+│       │
+│       ├── utils/
+│       │   ├── api.ts
+│       │   ├── auth.ts
+│       │   ├── constants.ts
+│       │   ├── helpers.ts
+│       │   ├── validation.ts
+│       │   ├── formatters.ts
+│       │   └── index.ts
+│       │
+│       ├── types/
+│       │   ├── index.ts
+│       │   ├── auth.ts
+│       │   ├── papers.ts
+│       │   ├── search.ts
+│       │   ├── annotations.ts
+│       │   ├── chat.ts
+│       │   └── collaboration.ts
+│       │
+│       └── theme/
+│           ├── index.ts
+│           ├── colors.ts
+│           ├── fonts.ts
+│           ├── components.ts
+│           └── foundations.ts
