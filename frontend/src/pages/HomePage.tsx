@@ -12,8 +12,8 @@ import {
     Badge,
     Stack,
     AvatarGroup,
-    Span,
 } from '@chakra-ui/react'
+import { RiArrowRightLine } from "react-icons/ri"
 import { useColorModeValue, ColorModeButton } from '../components/ui/color-mode'
 import {
     FileText,
@@ -127,11 +127,11 @@ export const HomePage = () => {
                         </HStack>
                         <HStack gap={4}>
                             <ColorModeButton />
-                            <Button variant="ghost" onClick={() => window.location.href = '/login'}>
+                            <Button colorPalette="blue" variant="outline" onClick={() => window.location.href = '/login'}>
                                 Sign In
                             </Button>
-                            <Button colorScheme="blue" onClick={() => window.location.href = '/register'}>
-                                Get Started <ArrowRight size={16} />
+                            <Button colorPalette="blue" variant="outline" onClick={() => window.location.href = '/register'}>
+                                Get Started <RiArrowRightLine />
                             </Button>
                         </HStack>
                     </Flex>
@@ -143,7 +143,7 @@ export const HomePage = () => {
                 <Container maxW="7xl">
                     <VStack gap={8} textAlign="center">
                         <Badge
-                            colorScheme="blue"
+                            colorPalette="blue"
                             px={4}
                             py={2}
                             rounded="full"
@@ -180,13 +180,13 @@ export const HomePage = () => {
                         </Text>
 
                         <HStack gap={4}>
-                            <Button size="lg" colorScheme="blue" onClick={() => window.location.href = '/register'}>
+                            <Button size="lg" colorPalette="blue" onClick={() => window.location.href = '/register'}>
                                 Start Free Trial <ArrowRight size={20} />
                             </Button>
                             <Button
                                 size="lg"
-                                variant="outline"
-                                colorScheme="blue"
+                                variant="surface"
+                                // colorPalette="blue"
                                 px={8}
                                 py={6}
                                 fontSize="lg"
@@ -346,13 +346,10 @@ export const HomePage = () => {
                             Start your free trial today.
                         </Text>
                         <HStack gap={4}>
-                            <Button size="lg" colorScheme="blue" onClick={() => window.location.href = '/register'}>
-                                Get Started Free <ArrowRight size={20} />
-                            </Button>
                             <Button
                                 size="lg"
-                                variant="outline"
-                                colorScheme="blue"
+                                variant="surface"
+                                colorPalette="blue"
                                 px={8}
                                 py={6}
                                 fontSize="lg"
@@ -361,7 +358,7 @@ export const HomePage = () => {
                             </Button>
                         </HStack>
                         <Text fontSize="sm" color={textColor}>
-                            No credit card required • 14-day free trial • Cancel anytime
+                            No credit card required • 30-day free trial • Cancel anytime
                         </Text>
                     </VStack>
                 </Container>
